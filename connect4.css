@@ -1,0 +1,52 @@
+/* game board table */
+
+body {
+  background: black;
+}
+
+h1 {
+  text-align: center;
+  font-family: stencil;
+  font-size: 50px;
+  color: gold
+}
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#board td {
+  width: 75px;
+  height: 75px;
+  border: solid 1px #666;
+}
+
+/* pieces are div within game table cells: draw as colored circles */
+
+.piece {
+  /* TODO: make into circles */
+  margin: 5px;
+  width: 80%;
+  height: 80%;
+  border-radius: 50%;
+}
+
+.piece.p1 {
+  background-color: green;
+}
+
+.piece.p2 {
+  background-color: gold;
+}
+
+/* column-top is table row of clickable areas for each column */
+
+#column-top td {
+  border: dashed 1px lightgray;
+}
+
+#column-top td:hover {
+  background-size: 100% 100%;
+  background-image: url(http://www.harnelinc.com/blog/wp-content/uploads/2016/09/football-clipart-2d-american-football-clipart-free-clip-art-images-300x174.jpg);
+}
